@@ -1,4 +1,4 @@
-package com.example.ticketservice;
+package lk.ijse.ticketway.ticketservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

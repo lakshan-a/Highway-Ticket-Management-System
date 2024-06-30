@@ -1,4 +1,4 @@
-package com.example.ticketservice;
+package lk.ijse.ticketway.ticketservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
