@@ -8,15 +8,18 @@
         <outputRelativeToContentRoot value="true" />
         <module name="TicketWay-ConfigServer" />
         <module name="TicketWay-ServiceRegistry" />
+        <module name="TicketWay-ApiGateWay" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="TicketWay-ApiGateWay" target="17" />
       <module name="TicketWay-ConfigServer" target="17" />
       <module name="TicketWay-ServiceRegistry" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="TicketWay-ApiGateWay" options="-parameters" />
       <module name="TicketWay-ConfigServer" options="-parameters" />
       <module name="TicketWay-ServiceRegistry" options="-parameters" />
     </option>

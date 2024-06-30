@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/TicketWay-ServiceRegistry/pom.xml" />
         <option value="$PROJECT_DIR$/TicketWay-ConfigServer/pom.xml" />
+        <option value="$PROJECT_DIR$/TicketWay-ApiGateWay/pom.xml" />
       </list>
     </option>
   </component>

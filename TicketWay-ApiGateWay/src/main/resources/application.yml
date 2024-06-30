@@ -1,0 +1,33 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: ticketway-gateway-service
+  cloud:
+    gateway:
+      mvc:
+        routes:
+          - id: user-service
+            uri: lb://ticketway-user-service
+            predicates:
+              - Path=/api/v1/users/**
+          - id: payment-service
+            uri: lb://ticketway-payment-service
+            predicates:
+              - Path=/api/v1/payment/**
+          - id: vehicle-service
+            uri: lb://ticketway-vehicle-service
+            predicates:
+              - Path=/api/v1/vehicle/**
+          - id: ticket-service
+            uri: lb://ticketway-ticket-service
+            predicates:
+              - Path=/api/v1/ticket/**
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
