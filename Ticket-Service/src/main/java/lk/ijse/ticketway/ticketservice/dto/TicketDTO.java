@@ -5,10 +5,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * @author : savindaJ
- * @date : 2024-06-28
- * @since : 0.1.0
- **/
+ * @version: v0.0.1
+ * @author: lakshanR
+ * @date: 6/27/2024
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

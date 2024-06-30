@@ -5,10 +5,10 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 /**
- * @author : savindaJ
- * @date : 2024-06-28
- * @since : 0.1.0
- **/
+ * @version: v0.0.1
+ * @author: lakshanR
+ * @date: 6/27/2024
+ */
 @Repository
 public interface TicketRepository extends JpaRepository<Ticket,Long> {
 }
