@@ -1,4 +1,4 @@
-package com.example.paymentservice;
+package lk.ijse.ticketway.paymentservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

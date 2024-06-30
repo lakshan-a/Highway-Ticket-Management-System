@@ -1,4 +1,4 @@
-package com.example.paymentservice;
+package lk.ijse.ticketway.paymentservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
