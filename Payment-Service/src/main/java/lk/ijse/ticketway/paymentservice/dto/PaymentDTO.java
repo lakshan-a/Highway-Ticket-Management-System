@@ -18,10 +18,9 @@ public class PaymentDTO {
     private Long id;
     private String paymentId;
     private String paymentType;
-    private String paymentAmount;
-    private String paymentDate;
+    private Double paymentAmount;
     private String paymentTime;
     private String paymentStatus;
     private String paymentLocation;
-    private Date date;
+    private Long ticketId;
 }

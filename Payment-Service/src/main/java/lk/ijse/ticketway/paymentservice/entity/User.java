@@ -5,9 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.annotations.CreationTimestamp;
 
-import java.sql.Timestamp;
+import java.util.List;
 
 /**
  * @version: v0.0.1
@@ -19,19 +18,17 @@ import java.sql.Timestamp;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Payment {
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String paymentId;
-    private String paymentType;
-    private Double paymentAmount;
-    private String paymentTime;
-    private String paymentStatus;
-    private String paymentLocation;
-    @CreationTimestamp
-    private Timestamp date;
+    private String name;
+    private String email;
+    private String password;
+    private String contact;
+    private String address;
+    private String nic;
 
-    @OneToOne
-    private Ticket ticket;
+    @OneToMany(mappedBy = "user")
+    private List<Ticket> tickets;
 }

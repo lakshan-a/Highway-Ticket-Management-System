@@ -1,7 +1,6 @@
 package lk.ijse.ticketway.paymentservice.service.impl;
 
 import lk.ijse.ticketway.paymentservice.dto.PaymentDTO;
-import lk.ijse.ticketway.paymentservice.entity.Payment;
 import lk.ijse.ticketway.paymentservice.repository.PaymentRepository;
 import lk.ijse.ticketway.paymentservice.service.PaymentService;
 import lk.ijse.ticketway.paymentservice.util.ResponseDTO;
