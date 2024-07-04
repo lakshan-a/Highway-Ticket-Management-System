@@ -4,10 +4,10 @@ import lk.ijse.ticketway.userservice.dto.LoginDTO;
 import lk.ijse.ticketway.userservice.dto.UserDTO;
 
 /**
- * @author : savindaJ
- * @date : 2024-06-26
- * @since : 0.1.0
- **/
+ * @version: v0.0.1
+ * @author: lakshanR
+ * @date: 6/26/2024
+ */
 public interface UserService {
     void registerUser(UserDTO userDTO);
 
