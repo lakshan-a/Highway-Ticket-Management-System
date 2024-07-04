@@ -4,10 +4,10 @@ import lk.ijse.ticketway.paymentservice.dto.PaymentDTO;
 import lk.ijse.ticketway.paymentservice.util.ResponseDTO;
 
 /**
- * @author : savindaJ
- * @date : 2024-07-01
- * @since : 0.1.0
- **/
+ * @version: v0.0.1
+ * @author: lakshanR
+ * @date: 7/1/2024
+ */
 public interface PaymentService {
     ResponseDTO add(PaymentDTO paymentDTO);
 
