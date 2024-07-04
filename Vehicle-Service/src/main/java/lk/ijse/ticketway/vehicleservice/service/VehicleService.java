@@ -6,10 +6,10 @@ import lk.ijse.ticketway.vehicleservice.util.ResponseDTO;
 import java.util.List;
 
 /**
- * @author : savindaJ
- * @date : 2024-07-01
- * @since : 0.1.0
- **/
+ * @version: v0.0.1
+ * @author: lakshanR
+ * @date: 6/26/2024
+ */
 public interface VehicleService {
     ResponseDTO registerVehicle(VehicleDTO vehicleDTO);
 
