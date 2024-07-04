@@ -11,10 +11,10 @@ import org.springframework.stereotype.Service;
 import java.util.logging.Logger;
 
 /**
- * @version: v0.0.1
- * @author: lakshanR
- * @date: 6/26/2024
- */
+ * @author : savindaJ
+ * @date : 2024-06-26
+ * @since : 0.1.0
+ **/
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -46,5 +46,11 @@ public class UserServiceImpl implements UserService {
             userRepository.save(mapper.map(userDTO, User.class));
         });
         logger.info("User Updated Successfully");
+    }
+
+    @Override
+    public UserDTO getUser(String email) {
+        User byName = userRepository.findByEmail(email);
+        return mapper.map(byName, UserDTO.class);
     }
 }

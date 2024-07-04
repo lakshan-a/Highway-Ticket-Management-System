@@ -1,17 +1,16 @@
 package lk.ijse.ticketway.ticketservice.util;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.util.HashMap;
 
 /**
- * @version: v0.0.1
- * @author: lakshanR
- * @date: 6/26/2024
- */
-@Data
+ * @author : savindaJ
+ * @date : 2024-06-28
+ * @since : 0.1.0
+ **/
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
 public class ResponseDTO {

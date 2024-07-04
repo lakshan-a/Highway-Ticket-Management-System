@@ -1,4 +1,4 @@
-package lk.ijse.ticketway.ticketservice.entity;
+package lk.ijse.ticketway.vehicleservice.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -35,6 +35,6 @@ public class Ticket {
     @OneToOne(mappedBy = "ticket")
     private Payment payment;
 
-    @ManyToOne
+    @ManyToOne(cascade = CascadeType.ALL)
     private Vehicle vehicle;
 }

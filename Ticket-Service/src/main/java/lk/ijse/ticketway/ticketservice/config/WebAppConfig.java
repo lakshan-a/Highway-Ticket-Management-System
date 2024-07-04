@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * @version: v0.0.1
- * @author: lakshanR
- * @date: 6/26/2024
- */
+ * @author : savindaJ
+ * @date : 2024-06-26
+ * @since : 0.1.0
+ **/
 @Configuration
 public class WebAppConfig {
 

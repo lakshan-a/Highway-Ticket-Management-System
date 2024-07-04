@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.*;
 import java.util.HashMap;
 
 /**
- * @version: v0.0.1
- * @author: lakshanR
- * @date: 6/30/2024
- */
+ * @author : savindaJ
+ * @date : 2024-06-24
+ * @since : 0.1.0
+ **/
 @RestController
 @RequestMapping("/actions")
 public class VehicleController {
@@ -46,6 +46,16 @@ public class VehicleController {
             HashMap<String, Object> objectObjectHashMap = new HashMap<>();
             objectObjectHashMap.put("vehicles", vehicleService.getAllVehicles());
             return new ResponseDTO(200, "vehicle Fetch Successfully !", objectObjectHashMap);
+        } catch (Exception e) {
+            return new ResponseDTO(e.getMessage(), 500);
+        }
+    }
+
+    @GetMapping("/get-vehicle/{id}")
+    public ResponseDTO getVehicle(@PathVariable String id) {
+        System.out.println(id);
+        try {
+            return vehicleService.getVehicle(id);
         } catch (Exception e) {
             return new ResponseDTO(e.getMessage(), 500);
         }

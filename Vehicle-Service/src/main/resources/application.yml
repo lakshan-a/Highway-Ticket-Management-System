@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: ticketway-vehicle-service
+  config:
+    import: "optional:configserver:http://localhost:8084"
+

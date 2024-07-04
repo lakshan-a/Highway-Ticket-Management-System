@@ -1,16 +1,11 @@
-package lk.ijse.ticketway.vehicleservice.entity;
+package lk.ijse.ticketway.userservice.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.annotations.CreationTimestamp;
 
-import java.sql.Timestamp;
 import java.util.List;
 
 /**
@@ -27,7 +22,7 @@ public class Vehicle {
     @Id
     @GeneratedValue(strategy = jakarta.persistence.GenerationType.IDENTITY)
     private Long id;
-    private String vehicleNumber;
+    private String vehicleId;
     private String vehicleType;
     private String vehicleBrand;
     private String vehicleModel;
@@ -37,11 +32,12 @@ public class Vehicle {
     private String vehicleTransmissionType;
     private String vehicleEngineCapacity;
     private String vehicleMileage;
+    private String vehiclePrice;
     private String vehicleStatus;
     private String vehicleLocation;
-    @CreationTimestamp
-    private Timestamp vehicleTime;
+    private String vehicleDate;
+    private String vehicleTime;
 
-    @OneToMany(mappedBy = "vehicle")
-    private List<Ticket> tickets;
+    @ManyToOne(cascade = CascadeType.ALL)
+    private Ticket ticket;
 }

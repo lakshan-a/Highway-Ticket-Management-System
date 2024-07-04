@@ -1,4 +1,4 @@
-package lk.ijse.ticketway.userservice.entity;
+package lk.ijse.ticketway.ticketservice.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

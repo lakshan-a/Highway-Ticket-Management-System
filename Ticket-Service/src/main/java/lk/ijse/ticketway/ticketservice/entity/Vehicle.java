@@ -1,4 +1,4 @@
-package lk.ijse.ticketway.vehicleservice.entity;
+package lk.ijse.ticketway.ticketservice.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,9 +8,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import org.hibernate.annotations.CreationTimestamp;
 
-import java.sql.Timestamp;
 import java.util.List;
 
 /**
@@ -37,10 +35,11 @@ public class Vehicle {
     private String vehicleTransmissionType;
     private String vehicleEngineCapacity;
     private String vehicleMileage;
+    private String vehiclePrice;
     private String vehicleStatus;
     private String vehicleLocation;
-    @CreationTimestamp
-    private Timestamp vehicleTime;
+    private String vehicleDate;
+    private String vehicleTime;
 
     @OneToMany(mappedBy = "vehicle")
     private List<Ticket> tickets;
