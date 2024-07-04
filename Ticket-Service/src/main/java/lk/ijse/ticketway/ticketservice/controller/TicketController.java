@@ -6,10 +6,10 @@ import lk.ijse.ticketway.ticketservice.util.ResponseDTO;
 import org.springframework.web.bind.annotation.*;
 
 /**
- * @author : savindaJ
- * @date : 2024-06-24
- * @since : 0.1.0
- **/
+ * @version: v0.0.1
+ * @author: lakshanR
+ * @date: 6/27/2024
+ */
 @RestController
 @RequestMapping("/actions")
 public class TicketController {

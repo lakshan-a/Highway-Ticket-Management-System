@@ -5,10 +5,10 @@ import lombok.*;
 import java.util.HashMap;
 
 /**
- * @author : savindaJ
- * @date : 2024-06-28
- * @since : 0.1.0
- **/
+ * @version: v0.0.1
+ * @author: lakshanR
+ * @date: 6/28/2024
+ */
 @Getter
 @Setter
 @AllArgsConstructor
