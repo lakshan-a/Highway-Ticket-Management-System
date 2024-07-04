@@ -9,10 +9,10 @@ import lombok.Setter;
 import java.util.List;
 
 /**
- * @version: v0.0.1
- * @author: lakshanR
- * @date: 6/27/2024
- */
+ * @author : savindaJ
+ * @date : 2024-06-24
+ * @since : 0.1.0
+ **/
 @Entity
 @Getter
 @Setter
