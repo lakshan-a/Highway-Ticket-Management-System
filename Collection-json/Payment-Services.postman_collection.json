@@ -1,0 +1,43 @@
+{
+  "info": {
+    "_postman_id": "5a9838ea-a63c-42a8-9984-bf7d8d1d99e3",
+    "name": "Payment-Services",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "12345",
+    "_collection_link": "https://www.postman.com/cryosat-geoscientist-30409600/workspace/highway-ticket-management-system/collection/31374382-ad9c5230-7fcb-4f8d-8466-b3ae215bb2cd?action=share&source=collection_link&creator=12345"
+  },
+  "item": [
+    {
+      "name": "add",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"id\":null,\n    \"paymentId\":\"PAY-001\",\n    \"paymentType\":\"Cash\",\n    \"paymentAmount\":2232.33,\n    \"paymentTime\":\"8.30PM\",\n    \"paymentStatus\":\"FINISH\",\n    \"paymentLocation\":\"Matara\",\n    \"ticketId\":1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/payment/actions/validate",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "v1",
+            "payment",
+            "actions",
+            "validate"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
