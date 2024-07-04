@@ -11,10 +11,10 @@ import java.sql.Timestamp;
 import java.util.Date;
 
 /**
- * @author : savindaJ
- * @date : 2024-06-24
- * @since : 0.1.0
- **/
+ * @version: v0.0.1
+ * @author: lakshanR
+ * @date: 6/24/2024
+ */
 @Entity
 @Getter
 @Setter
